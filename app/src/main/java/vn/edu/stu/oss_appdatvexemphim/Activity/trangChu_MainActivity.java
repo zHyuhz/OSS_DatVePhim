@@ -111,8 +111,9 @@ public class trangChu_MainActivity extends AppCompatActivity implements Navigati
                 ROLE = "USER";
                 startActivity(intent);
                 finish();
-            } else if (id == R.id.nav_QLTaiKhoan) {
-                Intent intent = new Intent(this, dsVe_MainActivity.class);
+            }
+            else if (id == R.id.nav_QLTaiKhoan) {
+                Intent intent = new Intent(this, dsTaiKhoan_MainActivity.class);
                 startActivity(intent);
             }
 //            else if (id == R.id.nav_QLNguoiDung) {
