@@ -122,28 +122,28 @@ public class chonChoNgoi_MainActivity extends AppCompatActivity implements View.
     }
 
     private void addEvents() {
-//        btn_comfirm.setOnClickListener(v -> {
-//            List<Integer> selectedSeats = getSelectedSeats();
-//            if (selectedSeats.isEmpty()) {
-//                Toast.makeText(chonChoNgoi_MainActivity.this, "Bạn chưa chọn ghế nào!", Toast.LENGTH_SHORT).show();
-//            } else {
-//                confirmSelected( selectedSeats);
-//
-//                new Handler(Looper.getMainLooper()).postDelayed(() -> {
-//                    ArrayList<SeatsResponse> sendListArray = new ArrayList<>(sendList);
-//                    Intent intent = new Intent(chonChoNgoi_MainActivity.this,thanhToan_MainActivity.class);
-//                    intent.putExtra("list_seats",sendListArray);
-//                    intent.putExtra("username",username);
-//                    intent.putExtra("scheduleResponse",scheduleResponse);
-//
-//                    startActivity(intent);
-//
-//                    Log.d("Check3", "Check: " + scheduleResponse.getRoom().getRoomId());
-//                    Log.d("Check4", "Check: " + sendList);
-//
-//                }, 1500);
-//            }
-//        });
+        btn_comfirm.setOnClickListener(v -> {
+            List<Integer> selectedSeats = getSelectedSeats();
+            if (selectedSeats.isEmpty()) {
+                Toast.makeText(chonChoNgoi_MainActivity.this, "Bạn chưa chọn ghế nào!", Toast.LENGTH_SHORT).show();
+            } else {
+                confirmSelected( selectedSeats);
+
+                new Handler(Looper.getMainLooper()).postDelayed(() -> {
+                    ArrayList<SeatsResponse> sendListArray = new ArrayList<>(sendList);
+                    Intent intent = new Intent(chonChoNgoi_MainActivity.this,thanhToan_MainActivity.class);
+                    intent.putExtra("list_seats",sendListArray);
+                    intent.putExtra("username",username);
+                    intent.putExtra("scheduleResponse",scheduleResponse);
+
+                    startActivity(intent);
+
+                    Log.d("Check3", "Check: " + scheduleResponse.getRoom().getRoomId());
+                    Log.d("Check4", "Check: " + sendList);
+
+                }, 1500);
+            }
+        });
         btn_troLai.setOnClickListener(v -> {
             finish();
         });
