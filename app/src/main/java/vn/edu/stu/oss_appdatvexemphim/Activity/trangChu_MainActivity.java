@@ -100,30 +100,31 @@ public class trangChu_MainActivity extends AppCompatActivity implements Navigati
         movieResponseList = new ArrayList<>();
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_menu_frmTrangChu);
-//        navigationView.setNavigationItemSelectedListener(menuItem -> {
-//            int id = menuItem.getItemId();
-//            if (id == R.id.nav_trangchu) {
-//            } else if (id == R.id.nav_QLPhim) {
-//                Intent intent = new Intent(this, dsPhim_MainActivity.class);
-//                startActivity(intent);
-//            } else if (id == R.id.nav_dangxuat) {
-//                Intent intent = new Intent(trangChu_MainActivity.this, dangNhap_MainActivity.class);
-//                ROLE = "USER";
-//                startActivity(intent);
-//                finish();
-//            } else if (id == R.id.nav_QLTaiKhoan) {
-//                Intent intent = new Intent(this, dsTaiKhoan_MainActivity.class);
-//                startActivity(intent);
-//            } else if (id == R.id.nav_QLNguoiDung) {
+        navigationView.setNavigationItemSelectedListener(menuItem -> {
+            int id = menuItem.getItemId();
+            if (id == R.id.nav_trangchu) {
+            } else if (id == R.id.nav_QLPhim) {
+                Intent intent = new Intent(this, dsPhim_MainActivity.class);
+                startActivity(intent);
+            } else if (id == R.id.nav_dangxuat) {
+                Intent intent = new Intent(trangChu_MainActivity.this, dangNhap_MainActivity.class);
+                ROLE = "USER";
+                startActivity(intent);
+                finish();
+            } else if (id == R.id.nav_QLTaiKhoan) {
+                Intent intent = new Intent(this, dsVe_MainActivity.class);
+                startActivity(intent);
+            }
+//            else if (id == R.id.nav_QLNguoiDung) {
 //                Intent intent = new Intent(this, dsNguoiDung_MainActivity.class);
 //                startActivity(intent);
 //            } else if (id == R.id.nav_QLVe) {
-//                Intent intent = new Intent(this, dsVe_MainActivity.class);
+//                Intent intent = new Intent(this, dsTaiKhoan_MainActivity.class);
 //                startActivity(intent);
 //            }
-//            return true;
+            return true;
 
-//        });
+        });
 
 
         toolbar = findViewById(R.id.toolbar);
