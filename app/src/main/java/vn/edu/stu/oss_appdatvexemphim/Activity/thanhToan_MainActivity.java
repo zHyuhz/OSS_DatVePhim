@@ -27,9 +27,11 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import vn.edu.stu.oss_appdatvexemphim.ApiService.ApiService;
+
 import vn.edu.stu.oss_appdatvexemphim.DTO.Request.BookingRequest;
 import vn.edu.stu.oss_appdatvexemphim.DTO.Response.AccountResponse;
 import vn.edu.stu.oss_appdatvexemphim.DTO.Response.ApiResponse;
+
 import vn.edu.stu.oss_appdatvexemphim.DTO.Response.BookingResponse;
 import vn.edu.stu.oss_appdatvexemphim.DTO.Response.ScheduleResponse;
 import vn.edu.stu.oss_appdatvexemphim.DTO.Response.SeatsResponse;
@@ -84,41 +86,41 @@ public class thanhToan_MainActivity extends AppCompatActivity {
     }
 
     private void addEvents() {
-//        btn_thanhtoan.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                BookingRequest bookingRequest = new BookingRequest();
-//                bookingRequest.setPrice(scheduleResponse.getPrice() * getArraySeat.size());
-//
-//                Date date = new Date();
-//                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-//                String formattedDate = formatter.format(date);
-//
-//                bookingRequest.setBookingDate(formattedDate);
-//
-//                bookingRequest.setUser_id(userID);
-//
-//
-//                bookingRequest.setSchedule_id(scheduleResponse.getSchedule_id());
-//                bookingRequest.setSeatsBooking(getArraySeat);
-//                createBooking(bookingRequest);
-//
-//                for (SeatsResponse response : getArraySeat) {
-//                    updateAvailable(response.getSeatRow(), response.getSeatNumber(), scheduleResponse.getRoom().getRoomId());
-//                }
-//                new Handler(Looper.getMainLooper()).postDelayed(() -> {
-//                    if (bookingResponse != null) {
-//                        Intent intent = new Intent(thanhToan_MainActivity.this, chiTietVe_MainActivity.class);
-//                        intent.putExtra("bookingResponse", bookingResponse);
-//                        intent.putExtra("getArraySeat", getArraySeat);
-//                        startActivity(intent);
-//                        finish();
-//                        Log.d("log4", "Check: " + bookingResponse);
-//                    }
-//                }, 1000);
-//            }
-//        });
+        btn_thanhtoan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                BookingRequest bookingRequest = new BookingRequest();
+                bookingRequest.setPrice(scheduleResponse.getPrice() * getArraySeat.size());
+
+                Date date = new Date();
+                SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+                String formattedDate = formatter.format(date);
+
+                bookingRequest.setBookingDate(formattedDate);
+
+                bookingRequest.setUser_id(userID);
+
+
+                bookingRequest.setSchedule_id(scheduleResponse.getSchedule_id());
+                bookingRequest.setSeatsBooking(getArraySeat);
+                createBooking(bookingRequest);
+
+                for (SeatsResponse response : getArraySeat) {
+                    updateAvailable(response.getSeatRow(), response.getSeatNumber(), scheduleResponse.getRoom().getRoomId());
+                }
+                new Handler(Looper.getMainLooper()).postDelayed(() -> {
+                    if (bookingResponse != null) {
+                        Intent intent = new Intent(thanhToan_MainActivity.this, chiTietVe_MainActivity.class);
+                        intent.putExtra("bookingResponse", bookingResponse);
+                        intent.putExtra("getArraySeat", getArraySeat);
+                        startActivity(intent);
+                        finish();
+                        Log.d("log4", "Check: " + bookingResponse);
+                    }
+                }, 1000);
+            }
+        });
         img_LichChieu_troLai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
