@@ -222,16 +222,16 @@ public class dangNhap_MainActivity extends AppCompatActivity {
     }
 
     private void xulyAnHienMatKhau() {
-        edt_matKhau.setOnTouchListener(new View.OnTouchListener() {
+        edt_loginMatKhau.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
 
                 if (event.getAction() == MotionEvent.ACTION_UP) {
                     // Lấy vị trí drawableEnd (phía bên phải)
-                    int drawableRightWidth = edt_matKhau.getCompoundDrawables()[2].getBounds().width();
+                    int drawableRightWidth = edt_loginMatKhau.getCompoundDrawables()[2].getBounds().width();
 
                     // Kiểm tra nếu vị trí chạm nằm trong drawableEnd
-                    if (event.getRawX() >= (edt_matKhau.getRight() - drawableRightWidth)) {
+                    if (event.getRawX() >= (edt_loginMatKhau.getRight() - drawableRightWidth)) {
                         // Toggle trạng thái hiển thị mật khẩu
                         togglePasswordVisibility();
                         return true; // Đã xử lý sự kiện, không cần xử lý tiếp
@@ -243,16 +243,16 @@ public class dangNhap_MainActivity extends AppCompatActivity {
     }
 
     private void togglePasswordVisibility() {
-        if (edt_matKhau.getInputType() == (InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD)) {
+        if (edt_loginMatKhau.getInputType() == (InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD)) {
             // Hiển thị mật khẩu
-            edt_matKhau.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
-            edt_matKhau.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.icons8_open_eye_32_, 0);
+            edt_loginMatKhau.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+            edt_loginMatKhau.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.icons8_open_eye_32_, 0);
         } else {
             // Ẩn mật khẩu
-            edt_matKhau.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-            edt_matKhau.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.icons8_eye_32, 0);
+            edt_loginMatKhau.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+            edt_loginMatKhau.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.icons8_eye_32, 0);
         }
         // Đặt con trỏ về cuối văn bản
-        edt_matKhau.setSelection(edt_matKhau.getText().length());
+        edt_loginMatKhau.setSelection(edt_loginMatKhau.getText().length());
     }
 }
