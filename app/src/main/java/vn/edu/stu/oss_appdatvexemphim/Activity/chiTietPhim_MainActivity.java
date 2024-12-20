@@ -66,12 +66,12 @@ public class chiTietPhim_MainActivity extends AppCompatActivity {
             }
         });
 
-//        btn_tiepTuc.setOnClickListener(v -> {
-//            Intent intent = new Intent(chiTietPhim_MainActivity.this, lichChieu_MainActivity.class);
-//            intent.putExtra("MovieID",movieResponse.getMovieId());
-//            intent.putExtra("username",username);
-//            startActivity(intent);
-//        });
+        btn_tiepTuc.setOnClickListener(v -> {
+            Intent intent = new Intent(chiTietPhim_MainActivity.this, lichChieu_MainActivity.class);
+            intent.putExtra("MovieID",movieResponse.getMovieId());
+            intent.putExtra("username",username);
+            startActivity(intent);
+        });
     }
 
     private MovieResponse getResultItent() {
