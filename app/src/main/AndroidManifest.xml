@@ -20,6 +20,22 @@
         android:theme="@style/Theme.OSS_AppDatVeXemPhim"
         tools:targetApi="31">
         <activity
+            android:name=".Activity.dsVe_MainActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name=".Activity.capNhapPhim_MainActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Activity.dsPhim_MainActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".Activity.chiTietVe_MainActivity"
             android:exported="true">
 
