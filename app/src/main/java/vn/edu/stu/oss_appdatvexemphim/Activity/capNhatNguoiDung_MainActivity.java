@@ -109,7 +109,7 @@ public class capNhatNguoiDung_MainActivity extends AppCompatActivity {
                     String formattedDate = dateFormat.format(calendar.getTime());
 
                     // Set ngày đã chọn lên TextView
-//                    tv_ngaySinh.setText(formattedDate);
+                    tv_ngaySinh.setText(formattedDate);
                 },
                 calendar.get(Calendar.YEAR),
                 calendar.get(Calendar.MONTH),
@@ -151,8 +151,8 @@ public class capNhatNguoiDung_MainActivity extends AppCompatActivity {
             UserResponse userResponse = (UserResponse) intent.getSerializableExtra("USER");
             if (userResponse != null) {
                 btn_them.setVisibility(View.GONE);
-                edt_hoTen.setText(userResponse.getUser_id() + "");
-                edt_ma.setText(userResponse.getFullName());
+                edt_ma.setText(userResponse.getUser_id() + "");
+                edt_hoTen.setText(userResponse.getFullName());
                 tv_ngaySinh.setText(userResponse.getBirthday());
                 int gender = userResponse.getGender();
 
