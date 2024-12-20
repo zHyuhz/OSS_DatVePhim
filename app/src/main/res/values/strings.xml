@@ -1,3 +1,75 @@
 <resources>
     <string name="app_name">OSS_AppDatVeXemPhim</string>
+
+    <string-array name="dsPhimDangChieu_ten">
+        <item>Avatar: The Way of Water</item>
+        <item>A Puppy Never Cries</item>
+        <item>The School Life We Loved</item>
+        <item>Demon Slayer: Season 4</item>
+        <item>Demon Slayer: Season 5</item>
+        <item>Grave of the Fireflies</item>
+        <item>The Day We Loved</item>
+        <item>A Story of the Past</item>
+        <item>Red One</item>
+        <item>Miracle Medicine</item>
+        <item>The Nun</item>
+        <item>Venom: Let There Be Carnage</item>
+        <item>Spirited Away</item>
+    </string-array>
+
+    <string-array name="dsPhimDangChieu_theLoai">
+        <item>Action, Sci-Fi</item>
+        <item>Drama, Family</item>
+        <item>School, Romance</item>
+        <item>Anime, Action</item>
+        <item>Anime, Adventure</item>
+        <item>Animation, Drama</item>
+        <item>Romance, Drama</item>
+        <item>Romance, Slice of Life</item>
+        <item>Action, Adventure</item>
+        <item>Drama, Medicine</item>
+        <item>Horror, Mystery</item>
+        <item>Action, Sci-Fi</item>
+        <item>Fantasy, Adventure</item>
+    </string-array>
+
+    <string-array name="dsPhimSapChieu_ten">
+        <item>Blue Period</item>
+        <item>Mission Retribution</item>
+        <item>The Kaleidoscope</item>
+        <item>Moana 2</item>
+        <item>Snow White</item>
+        <item>Flower Arrangement Man</item>
+        <item>The Moonlight Palace</item>
+        <item>Detective Kien</item>
+    </string-array>
+
+    <string-array name="dsPhimSapChieu_theLoai">
+        <item>Drama, Art</item>
+        <item>Action, Adventure</item>
+        <item>Mystery, Thriller</item>
+        <item>Animation, Adventure</item>
+        <item>Fantasy, Romance</item>
+        <item>Drama, Romance</item>
+        <item>Romance, Fantasy</item>
+        <item>Mystery, Crime</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="close_drawer">Close Drawer</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="storyline">Trong phim, Avengers và Vệ binh dải ngân hà cố gắng ngăn chặn Thanos thu thập
+        sáu Viên đá Vô cực mạnh mẽ như một phần trong nhiệm vụ tiêu diệt một nửa sự sống trong vũ trụ ...</string>
 </resources>

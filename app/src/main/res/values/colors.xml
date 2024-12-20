@@ -2,4 +2,17 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="white1">#c7c7c7</color>
+    <color name="gray">#8C8C8C</color>
+    <color name="backGround_selected">#FCC434</color>
+    <color name="textView_selected">#000000</color>
+    <color name="backGround_unSelected">#333333</color>
+    <color name="textView_unSelected">#FCC434</color>
+    <color name="selectedDatepicker">#A2342B</color>
+    <color name="Linear_Selected">#FCC434</color>
+    <color name="Linear_UnSelected">#333333</color>
+    <color name="month_selected">#000000</color>
+    <color name="month_UnSelected">#F2F2F2</color>
+    <color name="day_selected">#0335D1</color>
+    <color name="day_UnSelected">#FCC434</color>
 </resources>
