@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group>
+        <item
+            android:id="@+id/nav_trangchu"
+            android:icon="@drawable/icon_home"
+            android:title="Trang chủ" />
+        <item
+            android:id="@+id/nav_QLPhim"
+            android:icon="@drawable/icon_movie"
+            android:title="Quản lý phim" />
+        <item
+            android:id="@+id/nav_QLTaiKhoan"
+            android:icon="@drawable/icons_account"
+            android:title="Quản lý tài khoản" />
+        <item
+            android:id="@+id/nav_QLVe"
+            android:icon="@drawable/icons_ticket"
+            android:title="Quản lý vé" />
+        <item
+            android:id="@+id/nav_QLNguoiDung"
+            android:icon="@drawable/icons_account"
+            android:title="Quản lý người dùng" />
+
+    </group>
+    <group>
+        <item android:title="Khác">
+            <menu>
+                <item
+                    android:id="@+id/nav_dangxuat"
+                    android:icon="@drawable/icon_logout"
+                    android:title="Đăng xuất" />
+            </menu>
+        </item>
+    </group>
+
+</menu>
