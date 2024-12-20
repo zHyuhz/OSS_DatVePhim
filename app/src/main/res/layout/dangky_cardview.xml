@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView_dangKy"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:elevation="10dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/DK_btn_quayLai"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Quay lại"
+                android:fontFamily="@font/lucky_skirt"
+                android:textSize="15sp"
+                android:background="@drawable/custom_btn_dangnhap"
+                app:backgroundTint="@null"
+                android:layout_weight="1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                />
+            <TextView
+                android:id="@+id/txt_dangKy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ĐĂNG KÝ"
+                android:fontFamily="@font/lucky_skirt"
+                android:layout_gravity="right"
+                android:textColor="#3977E9"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/DK_btn_quayLai"
+                />
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_dangKy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:elevation="20dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:id="@+id/ln_hoVaTen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toBottomOf="@+id/txt_dangKy">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Họ và tên"
+                        android:fontFamily="@font/lucky_skirt"
+                        android:textColor="#3977E9"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edt_hoVaTen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edittext"
+                        android:maxLength="20"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ln_taiKhoan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_hoVaTen">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Tài khoản"
+                        android:fontFamily="@font/lucky_skirt"
+                        android:textColor="#3977E9"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edt_taiKhoan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edittext"
+                        android:maxLength="20"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+
+                        android:paddingBottom="5dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_matKhau"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_taiKhoan">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Mật khẩu"
+                        android:fontFamily="@font/lucky_skirt"
+                        android:textColor="#3977E9"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edt_matKhau"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edittext"
+                        android:drawableEnd="@drawable/custom_show_hiden_password"
+                        android:inputType="textPassword"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_xacNhanMatKhau"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_matKhau">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Xác nhận lại mật khẩu"
+                        android:fontFamily="@font/lucky_skirt"
+                        android:textColor="#3977E9"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edt_xacNhanMatKhau"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edittext"
+                        android:inputType="textPassword"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_soDienThoai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_xacNhanMatKhau">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Số điện thoại"
+                        android:fontFamily="@font/lucky_skirt"
+                        android:textColor="#3977E9"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edt_soDienThoai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edittext"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_dangKy">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Email"
+                        android:fontFamily="@font/lucky_skirt"
+                        android:textColor="#3977E9"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edittext"
+                        android:hint="example@gmail.com"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_ngaySinh_GioiTinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_email"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="Ngày sinh"
+                            android:fontFamily="@font/lucky_skirt"
+                            android:textColor="#3977E9"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edt_ngaySinh"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/custom_edittext"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:inputType="none"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="Giới tính"
+                            android:fontFamily="@font/lucky_skirt"
+                            android:textColor="#3977E9"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edt_gioiTinh"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/custom_edittext"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:inputType="none"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ln_thanhPho"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_ngaySinh_GioiTinh">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Thành phố"
+                        android:fontFamily="@font/lucky_skirt"
+                        android:textColor="#3977E9"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edt_thanhPho"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edittext"
+
+                        android:paddingLeft="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_nutDangNhap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ln_matKhau">
+
+
+                    <Button
+                        android:id="@+id/btn_Dky_dangKy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_btn_dangnhap"
+                        android:text="Đăng ký"
+                        android:fontFamily="@font/lucky_skirt"
+                        app:backgroundTint="@null" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
