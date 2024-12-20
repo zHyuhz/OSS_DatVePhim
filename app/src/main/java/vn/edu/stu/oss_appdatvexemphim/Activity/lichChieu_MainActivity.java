@@ -70,20 +70,20 @@ public class lichChieu_MainActivity extends AppCompatActivity implements IDatePi
 //        hienThiNgay();
 //        hienThiGio();
 
-//        btn_tiepTuc.setOnClickListener(v -> {
-//            if (scheduleSelected != null) {
-//                Intent intent = new Intent(lichChieu_MainActivity.this, chonChoNgoi_MainActivity.class);
-//                intent.putExtra("scheduleSelected", scheduleSelected);
+        btn_tiepTuc.setOnClickListener(v -> {
+            if (scheduleSelected != null) {
+                Intent intent = new Intent(lichChieu_MainActivity.this, chonChoNgoi_MainActivity.class);
+                intent.putExtra("scheduleSelected", scheduleSelected);
+
+                intent.putExtra("username", username);
+                startActivity(intent);
+                Log.d("ScheduleResponse", "scheduleSelected: " + scheduleSelected);
+                Toast.makeText(lichChieu_MainActivity.this, scheduleSelected.getRoom().getRoomName(), Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(lichChieu_MainActivity.this, "Vui lòng chọn lịch chiếu", Toast.LENGTH_LONG).show();
+            }
 //
-//                intent.putExtra("username", username);
-//                startActivity(intent);
-//                Log.d("ScheduleResponse", "scheduleSelected: " + scheduleSelected);
-//                Toast.makeText(lichChieu_MainActivity.this, scheduleSelected.getRoom().getRoomName(), Toast.LENGTH_LONG).show();
-//            } else {
-//                Toast.makeText(lichChieu_MainActivity.this, "Vui lòng chọn lịch chiếu", Toast.LENGTH_LONG).show();
-//            }
-////
-//        });
+        });
 
         btn_troLai.setOnClickListener(v -> {
             finish();
