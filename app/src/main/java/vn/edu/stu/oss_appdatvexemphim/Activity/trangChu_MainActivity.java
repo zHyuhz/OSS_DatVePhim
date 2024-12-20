@@ -209,14 +209,14 @@ public class trangChu_MainActivity extends AppCompatActivity implements Navigati
                 movieResponse = searchMovieList.get(position);
             }
 
-//            Intent intent = new Intent(trangChu_MainActivity.this, chiTietPhim_MainActivity.class);
-//            if (movieResponse != null) {
-//                intent.putExtra("MOVIE", movieResponse);
-//                intent.putExtra("username", username); //username
-//                Log.d("name1","trangchuname" + username);
-//                startActivity(intent);
-////                Toast.makeText(this, "Bạn đã chọn phim: " + movieResponse.getMovieName(), Toast.LENGTH_SHORT).show();
-//            }
+            Intent intent = new Intent(trangChu_MainActivity.this, chiTietPhim_MainActivity.class);
+            if (movieResponse != null) {
+                intent.putExtra("MOVIE", movieResponse);
+                intent.putExtra("username", username); //username
+                Log.d("name1","trangchuname" + username);
+                startActivity(intent);
+//                Toast.makeText(this, "Bạn đã chọn phim: " + movieResponse.getMovieName(), Toast.LENGTH_SHORT).show();
+            }
         });
     }
 
