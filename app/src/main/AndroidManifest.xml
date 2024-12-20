@@ -19,6 +19,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OSS_AppDatVeXemPhim"
         tools:targetApi="31">
+
+        <activity
+            android:name=".Activity.lichChieu_MainActivity"
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".Activity.chiTietPhim_MainActivity"
             android:exported="true">
