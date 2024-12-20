@@ -19,14 +19,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OSS_AppDatVeXemPhim"
         tools:targetApi="31">
+
         <activity
-            android:name=".Activity.trangChu_MainActivity"
+            android:name=".Activity.dangNhap_MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.trangChu_MainActivity"
+            android:exported="true">
+
         </activity>
     </application>
 
