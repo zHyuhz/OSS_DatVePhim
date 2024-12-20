@@ -56,14 +56,14 @@ public class chiTietVe_MainActivity extends AppCompatActivity {
     }
 
     private void addEvents() {
-//        img_btn_troLai.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(chiTietVe_MainActivity.this, trangChu_MainActivity.class);
-//                startActivity(intent);
-//                finish();
-//            }
-//        });
+        img_btn_troLai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(chiTietVe_MainActivity.this, trangChu_MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     private void getResult() {
@@ -77,12 +77,12 @@ public class chiTietVe_MainActivity extends AppCompatActivity {
         Log.d("log3", "Check: " + bookingResponse);
         String url = RetrofitSer.BASE_URL + bookingResponse.getSchedule().getMovies().getMovie_poster();
 
-//        Glide.with(chiTietVe_MainActivity.this)
-//                .load(url)
-//                .placeholder(R.drawable.custom_cardview_login) // Hình ảnh hiển thị trong khi tải
-//                .error(R.drawable.custom_cardview_login)// Hình ảnh hiển thị khi lỗi
-//                .diskCacheStrategy(DiskCacheStrategy.NONE)
-//                .into(img_posterMovie);
+        Glide.with(chiTietVe_MainActivity.this)
+                .load(url)
+                .placeholder(R.drawable.custom_cardview_login) // Hình ảnh hiển thị trong khi tải
+                .error(R.drawable.custom_cardview_login)// Hình ảnh hiển thị khi lỗi
+                .diskCacheStrategy(DiskCacheStrategy.NONE)
+                .into(img_posterMovie);
 
 
        frmChiTietVe_tenPhim.setText(bookingResponse.getSchedule().getMovies().getMovieName());
