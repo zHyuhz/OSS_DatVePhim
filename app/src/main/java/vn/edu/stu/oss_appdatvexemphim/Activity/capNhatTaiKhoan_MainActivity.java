@@ -63,7 +63,7 @@ public class capNhatTaiKhoan_MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, dsTaiKhoan_MainActivity.class);
             startActivity(intent);
         });
-//        xulyNhapEmail();
+        xulyNhapEmail();
         frmChiTietTK_btn_Luu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
