@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners
+                android:bottomLeftRadius="100dp"
+                android:bottomRightRadius="100dp"
+                android:topLeftRadius="0dp"
+                android:topRightRadius="0dp" />
+            <solid android:color="#00BABD" />
+            <size
+                android:width="182dp"
+                android:height="200dp" />
+        </shape>
+    </item>
+
+    <item>
+        <vector
+            android:width="200dp"
+            android:height="100dp"
+            android:viewportWidth="200"
+            android:viewportHeight="100">
+
+            <path
+                android:fillColor="#94FEFA"
+            android:pathData="M0,50 Q50,0 100,50 T200,50 V100 H0 Z" />
+        </vector>
+    </item>
+
+    <item>
+
+        <vector android:width="200dp"
+        android:height="100dp"
+        android:viewportWidth="110"
+        android:viewportHeight="60">
+
+        <path
+            android:fillColor="#C3FFFF"
+        android:pathData="M0,50 Q50,0 100,50 Q150,100 200,50 T200,100 H0 Z" />
+    </vector>
+</item>
+</layer-list>
